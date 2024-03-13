@@ -4,7 +4,7 @@ const controller = require("../controller/controller");
 const auth = require("../../middleware/auth");
 const validateUserInput = require("../../middleware/validate");
 
-router.post("/login",validateUserInput, controller.login);
+router.post("/login", controller.login);
 router.post("/signup",validateUserInput, controller.signup);
 
 

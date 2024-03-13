@@ -55,16 +55,6 @@ const login = async (req, res) => {
       res.status(500).json({ error: e });
   }
 }
-// const addUser = async (req, res) => {
-//   try {
-//     const addUser = new User(req.body);
-//     const createUser = await addUser.save();
-//     console.log(req.body);
-//     res.status(201).send(createUser);
-//   } catch (e) {
-//     res.status(500).send(e);
-//   }
-// };
 
 const getUsers = async (req, res) => {
   try {
